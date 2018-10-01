@@ -1,0 +1,143 @@
+\documentclass[a4paper]{article}
+
+\usepackage{fontspec}
+\usepackage{fontawesome}
+\usepackage[T1]{fontenc}
+
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{supertabular}
+\usepackage{multirow}
+
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+
+\RequirePackage{color,graphicx}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+\definecolor{starcolor}{rgb}{0.8, 0, 0}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{15pt}
+
+\begin{document}
+\pagestyle{empty}
+
+\setmainfont{EBGaramond12-Regular}
+
+\par{\centering{\Huge Eric \textsc{Kramer}}\bigskip\par}
+
+%\begin{center}
+%\Huge Eric \textsc{Kramer} \\
+%\Large \faGithub \hspace{0.3cm} \Large \faLinkedin  \hspace{0.3cm}  \Large \faTwitter
+%\end{center}
+
+\setmainfont[
+ItalicFont = GillSans-Italic,
+BoldFont = GillSans-Bold,
+BoldItalicFont = GillSans-BoldItalic
+]{GillSans}
+
+\section{Contact}
+\begin{tabular}{rl}
+    \textsc{Phone:}     & 619\cdot724\cdot3800\\
+    \textsc{Email:}      & \href{mailto:ericransomkramer@gmail.com}{ericransomkramer@gmail.com} \\
+    \textsc{Address:}   & 4069 Brant St, San Diego, CA 92103
+\end{tabular}
+
+
+\section{Technologies}
+
+	\begin{tabular}{@{}l l l l l l}
+	
+		% headers
+		\multicolumn{2}{@{}l}{\textbf{Data Manipulation}} & 
+		\multicolumn{2}{l}{\textbf{Data Visualization}}  & 
+		\multicolumn{2}{l}{\textbf{Machine Learning}}  \\
+		
+		% row 1
+		\hspace{0.5cm}R::tidyverse & {\color{starcolor}\faStar\faStar\faStar\faStar\faStar} & 
+		\hspace{0.5cm}R::ggplot2   & {\color{starcolor}\faStar\faStar\faStar\faStar\faStar} & 
+		\hspace{0.5cm}keras & {\color{starcolor}\faStar\faStar\faStar\faStar\faStar}  \\
+		
+		% row 2
+		\hspace{0.5cm}Python & {\color{starcolor}\faStar\faStar\faStar\faStar\faStar} & 
+		\hspace{0.5cm}R::Shiny & {\color{starcolor}\faStar\faStar\faStar\faStar} & 
+		\hspace{0.5cm}R::caret  & {\color{starcolor}\faStar\faStar\faStar\faStar} \\
+		
+		% row 3
+		\hspace{0.5cm}SQL & {\color{starcolor}\faStar\faStar\faStar}\hspace{1.4cm} & 
+		\hspace{0.5cm}d3.js & {\color{starcolor}\faStar\faStar}\hspace{1.6cm} & 
+		\hspace{0.5cm}Scikit-learn & {\color{starcolor}\faStar\faStar} 
+		
+	\end{tabular}
+
+\section{Education}
+\begin{tabular}{r | p{11cm}}	
+
+\raggedleft \textsc{March} 2019 & \emph{\textbf{Doctor of Medicine}} \\ 
+\raggedleft \emph{expected} & University of California, San Diego - School of Medicine \\
+  & Academic Honors: Chateaubriand Fellowship, Hertz Fellowship Semi-Finalist \\
+
+ \multicolumn{2}{c}{} \\
+
+\raggedleft \textsc{June} 2009 & \emph{\textbf{Bachelor's of Art in Mathematics}} \\ 
+  & Northwestern University, Evanston IL\\
+  & Thesis: ``A statistical interpretation of metabolic networks'' \\
+  & Academic Honors: Graduated Summa Cum Laude, Phi Beta Kappa \\
+\end{tabular}
+
+\section{Work Experience}
+\begin{tabular}{r | p{11cm}}
+
+ \raggedleft \textsc{Aug} 2015 - \textsc{Mar} 2017 & \emph{\textbf{Senior Data Scientist}} \\
+   & Dataiku, Paris, France\\
+ &\footnotesize{Lead the \emph{Medatalab} project, which used at-home, wearable EEG machines to monitor children with refractory epilepsy. Managed the development of deep neural network tools for the analysis of EEGs. Won two awards for digital innovation in France.} \\
+ 
+ \multicolumn{2}{c}{} \\
+ 
+\raggedleft \textsc{Oct} 2014 - \textsc{July} 2015 & \emph{\textbf{Research Fellow}} \\
+   & The Pasteur Institute, Paris, France\\
+   & Adviser: Lluis Quintana-Murci\\
+ &\footnotesize{Developed models of epigenetic differences across age, tissue and populations using linear mixed effects models. Work funded by the French government via a Chateaubriand fellowship.} \\
+ 
+  \multicolumn{2}{c}{} \\
+ 
+\raggedleft \textsc{June} 2013 - \textsc{July} 2015 & \emph{\textbf{Graduate Student}} \\
+   & The Scripps Research Institute, La Jolla, CA\\
+   & Adviser: Ali Torkamani\\
+ &\footnotesize{Applied machine learning to the prediction of drug response using genomic data. Placed in top-5 in DREAM challenge for response to TNF-$\alpha$ inhibitors. Published cardiac biomarker signature.} \\
+
+\end{tabular}
+
+
+\section{Demos}
+
+	\begin{tabular}{r p{4cm} r p{4cm} r p{4cm} }
+	
+		% headers
+		\multirow{2}{*}{\Huge \color{starcolor}{\faSmileO}} &
+		\textbf{Sentiment Analysis} & 
+		\multirow{2}{*}{\Huge \color{starcolor}{\faPictureO}} &
+		\textbf{Image Recognition} &
+		\multirow{2}{*}{\Huge \color{starcolor}{\faLineChart }} &
+		\textbf{Financial Modeling}\\
+		
+		% links
+		&
+		\href{https://sentiment.erickramer.live}{live}, \href{https://github.com/erickramer/sentiment}{code} & &
+		\href{https://image.erickramer.live}{live}, \href{https://github.com/erickramer/image_recog}{code} & &
+		\href{https://eransom.shinyapps.io/financial_planning/}{live}, \href{https://github.com/erickramer/financial_dashboard}{code} \\	
+
+		
+	\end{tabular}
+
+\section{Miscellaneous}
+
+	\begin{tabular}{r l}
+		\textsc{Citizenship}: & USA \\
+		\textsc{Languages}: &  English (native; C2), French (conversant; B2)\\
+		\textsc{Interests}: & Politics, Anthropology, Meditation
+	\end{tabular}
+
+\end{document}
