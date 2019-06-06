@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.4.16)  30 SEP 2018 21:17
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.4.16)  5 JUN 2019 18:35
  restricted system commands enabled.
  file:line:error style messages enabled.
 **EricKramer-resume.tex
@@ -35,7 +35,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.123 seconds
+luaotfload | main : initialization completed in 0.175 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -989,7 +989,7 @@ Here is how much of LuaTeX's memory you used:
  408 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 4 attribute, 53 glue_spec, 4 attribute_list
 , 1 write nodes
-   avail lists: 1:1,2:888,3:139,4:80,5:187,6:49,7:2670,8:140,9:272,10:3,11:174
+   avail lists: 1:1,2:886,3:139,4:80,5:187,6:49,7:2663,8:140,9:272,10:3,11:174
  21378 multiletter control sequences out of 65536+600000
  66 fonts using 10534439 bytes
  39i,9n,67p,392b,332s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -1000,7 +1000,7 @@ ary/Fonts/GillSans.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public
 public/ebgaramond/EBGaramond12-Regular.otf></usr/local/texlive/2018/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on EricKramer-resume.pdf (1 page, 38276 bytes).
+Output written on EricKramer-resume.pdf (1 page, 37996 bytes).
 
 PDF statistics: 99 PDF objects out of 1000 (max. 8388607)
  75 compressed objects within 1 object stream
